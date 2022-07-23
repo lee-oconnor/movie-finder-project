@@ -1,0 +1,302 @@
+
+/*-----------GLOBAL STYLES______________*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+#header-div, #watchlist-header-div {
+width: 100%;
+height: 208px;
+left: 0px;
+top: 0px;
+
+background: url(./img/image-36.png);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+h1 {
+
+width: 300px;
+height: 50px;
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 2.5em;
+line-height: 24px;
+letter-spacing: -0.045em;
+padding-top: 30px;
+padding-left: 20px;
+color: #FFFFFF;
+}
+
+#watchlist-btn, #backToSearch-btn {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+#search-input > form {
+    display: flex;
+    
+}
+
+#search-input > form > input {
+     background: url('/img/Search.png')  no-repeat scroll 10px 10px;
+     background-size: 20px;
+     padding-left: 40px;
+     background-color: #2e2e2f;
+     color: #fff;
+}
+
+
+#search-movie {
+    padding: 0px 13px;
+    width: 342px;
+    height: 38px;
+    background: #2E2E2F;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px 0px 0px 6px;
+    
+
+}
+
+#search-movie-btn {
+    padding:9px 11px 9px 17px;
+    height: 38px;
+    background: #6d6d6e;
+    border: none;
+    color: #fff;
+   border-radius: 0px 6px 6px 0px;
+   font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+#found-film-container, #watchlist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 550px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    color: #2E2E2F;
+
+}
+
+
+.start-exploring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding-top: 75px;
+    color: #2E2E2F;
+}
+
+.hide {
+    display: none;
+}
+
+
+#search-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 13px;
+    gap: 8px;
+    width: 342px;
+    height: 38px;
+}
+
+.movie-title {
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.found-movie {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.movie-details {
+    width: 350px;
+    height: 147.41px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.6em;
+    color: #fff;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.movie-poster > img {
+    width: 99px;
+    height: 147.41px;
+}
+
+#star {
+    width: 15px;
+    height: 15px;
+    padding-right: 3px;
+}
+
+.watchlist-btn {
+    padding-left: 20px;
+    padding-top: 6px;
+    cursor: pointer;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    border: none;
+    background: #000;
+}
+
+.watchlist-btn > img {
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-left: 15px;
+}
+
+
+.genre {
+    padding-left: 15px;
+}
+
+.movie-plot {
+    padding-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+/* or 143% */
+    color: #A5A5A5;
+
+}
+
+.film-rating {
+    font-size: .75em;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.runtime {
+    padding-right: 5px;
+}
+
+#watchlist-container {
+    width: 550px;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #787878;
+
+}
+
+#empty-watchlist-note {
+    color: #787878;
+    font-size: 1em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+#clear-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 140px;
+    text-align: center;
+    margin-top: 0px;
+    background: #2E2E2F;
+    border: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 7px;
+    
+}
+
+.watchlist-btn[add-state="addable"]::before {
+  content: url("img/add-icon.png");
+  padding: 5px;
+}
+.watchlist-btn[add-state="removable"]::before {
+  content: url("img/subtract-icon.png");
+  padding: 5px;
+}
+
+#back-to-search {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 1em;
+text-align: center;
+color: #FFFFFF;
+text-decoration: none;
+}
+
